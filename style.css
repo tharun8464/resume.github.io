@@ -1,0 +1,146 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-image: linear-gradient(white,lightsteelblue,white, white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 100% !important;
+    columns: darkgray;
+    background-position:fixed;
+
+
+}
+a.active{
+    /* color: black !important; */
+    font-weight: bolder;
+    color: blueviolet !important;
+   
+}
+.left_column{
+    width: 28%;    
+    margin: 5px;
+    float: left;
+    background-color: white;
+    box-shadow: 3px 3px 10px darkgray;
+    border: 1px solid darkkhaki;
+    position: fixed ;
+    overflow: auto;
+    
+}
+.left_column::after{
+    clear: both;
+    content: " ";
+}
+.link_icon{
+    font-size: 20px;
+}
+.right_column{
+    float: right;
+    width: 69%;
+    padding: 5px;
+    margin: 10px;
+    
+    background-color: white;
+    box-shadow: 3px 3px 10px darkkhaki;
+}
+
+.inner_right_box{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.dpa{
+    margin: 2px;
+    padding: 0px;
+    font-size: 19px;
+}
+.profile_pic{
+    height: 220px;
+    /* border: 1px solid teal; */
+    width: 80%;
+    padding: 3px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width:650px){
+    .profile_pic{
+        width: 100%;
+    }
+}
+
+.mmi{
+    font-size: 19px;
+    color: teal;
+}
+
+.smi{
+   font-size: 30px;
+
+    color: teal;
+}
+a.nav-link{
+    padding: 3px 0px !important;
+    color: teal;
+    font-size: 20px;
+}
+.section_heading{
+    font-size: 32px;
+    font-weight: 400;
+}
+.sub_section{
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.sub_time{
+    color: teal ;
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .left_column{
+        width: 97%;
+        position: relative;
+    }
+    .right_column{
+        width: 97%;
+    }
+  
+  }
+  .skill_heading{
+      font-size: large;
+      margin-bottom: 0px !important;
+  }
+  
+
+
+  @media screen and (max-width: 1000px) and (min-width: 600px)  {
+    .left_column{
+        width: 48%;
+        position: fixed;
+        overflow-y: scroll;
+        max-height: 98vh;
+    }
+    .right_column{
+        width: 50%;
+    }
+  
+  }
+  ul{
+      list-style-type: none !important;
+  }
+  .list_icon{
+      font-size: 18px;
+      line-height: normal;
+  }
+
+  .form-control {
+      border: 1px solid skyblue;
+  }
+  .form-control:focus{
+      box-shadow: 0px 0px 4px 1px lightskyblue;
+  }
